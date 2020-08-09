@@ -1,12 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import './index.css';
-import App from './App';
+import Root from './Root';
 import * as serviceWorker from './serviceWorker';
+import { createStore } from 'redux';
+import todoApp from './reducers'
 
-ReactDOM.render(
+const store = createStore(todoApp)
+
+render(
   <React.StrictMode>
-    <App />
+    <Root store={store} />
   </React.StrictMode>,
   document.getElementById('root')
 );
