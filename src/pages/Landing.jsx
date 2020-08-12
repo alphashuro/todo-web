@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Landing() {
   return (
@@ -9,9 +10,9 @@ function Landing() {
           <p class="splash-subhead">Let tech do the remembering for you</p>
           <p>
             {/* TODO: Link to signin, signup, or app page */}
-            <a href="#" class="pure-button pure-button-primary">
+            <Link to="/app" class="pure-button pure-button-primary">
               Get Started
-            </a>
+            </Link>
           </p>
         </div>
       </div>
