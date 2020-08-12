@@ -5,18 +5,18 @@ function Nav() {
   return (
     <div className="header">
       <div className="home-menu pure-menu pure-menu-horizontal">
-        <a href="/" class="pure-menu-heading pure-menu-link">
+        <a href="/" className="pure-menu-heading pure-menu-link">
           todo
         </a>
         
-        <ul class="pure-menu-list">
-          <li class="pure-menu-item">
-            <Link to="/login" class="pure-menu-link">
+        <ul className="pure-menu-list">
+          <li className="pure-menu-item">
+            <Link to="/login" className="pure-menu-link">
               Login
             </Link>
           </li>
-          <li class="pure-menu-item">
-            <Link to="/signup" class="pure-menu-link">
+          <li className="pure-menu-item">
+            <Link to="/signup" className="pure-menu-link">
               Signup
             </Link>
           </li>
